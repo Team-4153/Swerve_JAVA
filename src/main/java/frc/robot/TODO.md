@@ -9,13 +9,13 @@
 ```mermaid
 graph TD
 A[Camera Sees Tape]
-A --> B(Display Message to Driver)
+A -- Math --> B(Display Message to Driver)
 B --> C(Accurate)
 B --> D(Innacurate)
 C --> G(Start Climb)
-D -- More Math --> F(Auto-Plot Adjust)
-F --> G
-
+D -- More Math --> F[\Auto-Plot Adjust/]
+F --> B
+F --> H[Adjust Fails... Well F***]
 ```
 
 ### Manual Sequence
